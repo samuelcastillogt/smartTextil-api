@@ -6,6 +6,7 @@ const app = Express()
 
 const port = process.env.port ?? 3000
 app.use(cors())
+app.use(Express.json())
 app.use("/", (req, res) => res.send("Hello World"))
 app.use("/products", productsRoutes)
 
