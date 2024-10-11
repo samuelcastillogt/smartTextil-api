@@ -7,5 +7,8 @@ class ProductsController{
         console.log(response)
         return response
     }
+    async sendProduct(data){
+        return data
+    }
 }
 export const productsController = new ProductsController()
